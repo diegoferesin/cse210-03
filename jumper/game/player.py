@@ -1,4 +1,3 @@
-from game.word import Word
 
 class Player:
     def __init__(self):
