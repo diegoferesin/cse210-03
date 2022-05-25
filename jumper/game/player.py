@@ -11,7 +11,11 @@ class Player:
         self._lives = lives
 
     def get_letters_used(self):
-        return self._letters_used
+        letters = ""
+        for i in range(len(self._letters_used)):
+            letters += f"{self._letters_used[i]} "
+        
+        print(f"Letters used: {letters}")
 
     def add_letters_used(self, letter):
         self._letters_used.append(letter)
