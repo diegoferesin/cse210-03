@@ -15,8 +15,14 @@ class Display:
         print()
 
     def user_input(self):
-        letter = input("Guess a letter [a-z]: ")
-        return letter
+        correct = True
+        while correct:
+            letter = input("Guess a letter [a-z]: ")
+            if len(letter) > 1:
+                print("You can only enter one letter. Please try again")
+            else:
+                correct = False
+                return letter
 
     def display_win_message(self):
 
