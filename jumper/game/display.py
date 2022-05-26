@@ -9,9 +9,9 @@ class Display:
     def display_puzzle(self, letters, word):
         for letter in word:
             if letter in letters:
-                print(letter + " ", end = "")
+                print(letter + " ", end="")
             else:
-                print(" _ ", end = "")
+                print(" _ ", end="")
         print()
 
     def user_input(self):
@@ -19,16 +19,15 @@ class Display:
         while correct:
             letter = input("Guess a letter [a-z]: ")
             if len(letter) > 1:
-                print("You can only enter one letter. Please try again")
+                print("You can only enter one letter. Please try again 😁")
+            elif letter.isspace():
+                print("You can't type an empty space. Please try againg 😁")
             else:
                 correct = False
                 return letter
 
     def display_win_message(self):
-
         print("Congratulations, you guessed the word and won the game!")
 
     def display_loss_message(self):
-
         print("Your jumper run out of lives. Better luck next time.")
-    
