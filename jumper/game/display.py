@@ -2,7 +2,7 @@
 class Display:
     
     def display_jumper(self, jumper):
-        #print("_ _ _ _ _\n")
+        print("\n")
         for i in jumper:
             print(i)
         print("^^^^^^^\n")
