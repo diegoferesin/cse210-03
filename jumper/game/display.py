@@ -17,7 +17,7 @@ class Display:
     def user_input(self):
         correct = True
         while correct:
-            letter = input("Guess a letter [a-z]: ")
+            letter = input("Guess a letter [a-z]: ").lower()
             if len(letter) > 1:
                 print("You can only enter one letter. Please try again 😁")
             elif letter.isspace():
@@ -37,3 +37,6 @@ class Display:
 
     def display_letters_used(self, letters):
         print(f"Letters used: {letters}")
+    
+    def display_secret_word(self,word):
+        print(f"The word was: {word}")

@@ -44,6 +44,7 @@ class Manager():
                 self.display.display_win_message()
             else:
                 self.display.display_loss_message()
+                self.display.display_secret_word(self.word.get_puzzle())
 
     def check_guess(self):
         if self.letter in self.player.letters_used():
