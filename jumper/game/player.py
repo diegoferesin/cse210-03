@@ -2,7 +2,8 @@
 class Player:
     def __init__(self):
         """initialize the lives and the array to store the letters chosen by the player"""
-        self._lives = ['  ___  ', '/     \ ', ' ----- ', '\     / ', ' \   /  ','   O   ', '  /|\  ', '  / \  ' ]
+        self._lives = ['  ___  ', '/     \ ', ' ----- ',
+                       '\     / ', ' \   /  ', '   O   ', '  /|\  ', '  / \  ']
         self._letters_used = []
 
     def get_lives(self):
@@ -23,7 +24,7 @@ class Player:
     def letters_used(self):
         """return the list of letters that the player has used"""
         return self._letters_used
-    
+
     def add_letters_used(self, letter):
         """append letter to list of already-used letters"""
         self._letters_used.append(letter)

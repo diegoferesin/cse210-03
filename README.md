@@ -41,12 +41,12 @@ root                    (project root folder)
 ## Required Technologies
 
 ---
+
 - Python 3.8.0
 
 ## UML Diagram
 
 <img src="jumper/game-diagram.png" widt="500px">
-
 
 ---
 
@@ -55,32 +55,32 @@ root                    (project root folder)
 ---
 
 Player
-	⁃	lives:[chart]
-	⁃	letter that used:[strings]
-	⁃	+ writeALetter():string
-	⁃	+ getLives():[chart]
+⁃ lives:[chart]
+⁃ letter that used:[strings]
+⁃ + writeALetter():string
+⁃ + getLives():[chart]
 
-Game Manager	
-	⁃	+ startGame():void
-	⁃	+ getInput():string
-	⁃	+ displayOutput():void
-	⁃	+ doMath():
-	⁃	+ endGame():void
-  
-Display 
-	⁃	+ output():void
-	⁃	+ input():string
+Game Manager
+⁃ + startGame():void
+⁃ + getInput():string
+⁃ + displayOutput():void
+⁃ + doMath():
+⁃ + endGame():void
+
+Display
+⁃ + output():void
+⁃ + input():string
 
 Word generator
-	⁃	- list of word
-	⁃	+ generateRandomlyWord():string
-
+⁃ - list of word
+⁃ + generateRandomlyWord():string
 
 ## Authors
 
 ---
-- Diego Feresin (diegoferesin@gmail.com) 
-- Emma Lund (lun21010@byui.edu) 
-- Nestor Rivera (riv21007@byui.edu) 
-- Juan Castellani (cas22009@byui.edu) 
-- Kennette Guevara (rod21023@byui.edu) 
+
+- Diego Feresin (diegoferesin@gmail.com)
+- Emma Lund (lun21010@byui.edu)
+- Nestor Rivera (riv21007@byui.edu)
+- Juan Castellani (cas22009@byui.edu)
+- Kennette Guevara (rod21023@byui.edu)
