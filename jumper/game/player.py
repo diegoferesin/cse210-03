@@ -17,5 +17,8 @@ class Player:
         
         print(f"Letters used: {letters}")
 
+    def letters_used(self):
+        return self._letters_used
+    
     def add_letters_used(self, letter):
         self._letters_used.append(letter)

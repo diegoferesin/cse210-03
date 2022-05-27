@@ -45,14 +45,15 @@ class Manager():
                 self.display.display_loss_message()
 
     def check_guess(self):
-        if self.letter not in self.word.get_puzzle():
+        if self.letter in self.player.letters_used():
+            print("You already used this letter. Please try with a different one 😁")
+        elif self.letter not in self.word.get_puzzle():
             self.player.add_letters_used(self.letter)
             aux_lives = self.player.get_lives()
             aux_lives.pop(0)
             self.player.set_lives(aux_lives)
-
         else:
-
+            self.player.add_letters_used(self.letter)
             self.guessed_letter.append(self.letter)
 
     def check_puzzle(self):
