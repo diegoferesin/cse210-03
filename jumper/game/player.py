@@ -15,7 +15,7 @@ class Player:
         for i in range(len(self._letters_used)):
             letters += f"{self._letters_used[i]} "
         
-        print(f"Letters used: {letters}")
+        return letters
 
     def letters_used(self):
         return self._letters_used

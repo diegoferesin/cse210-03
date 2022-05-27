@@ -36,7 +36,7 @@ class Manager():
 
         self.display.display_jumper(self.player.get_lives())
         self.display.display_puzzle(self.guessed_letter, self.word.get_puzzle())
-        self.player.get_letters_used()
+        self.display.display_letters_used(self.player.get_letters_used())
         if not self.isPlaying:
 
             if self.winCondition:
