@@ -3,8 +3,7 @@ from . import display as display_class
 from . import word as word_class
 from . import player as player_class
 
-
-class Manager():
+class Manager():    
     def __init__(self):
         """
         initialize the variables of the game:
@@ -23,6 +22,7 @@ class Manager():
         self.letter = ""
         self.guessed_letter = []
 
+
     def start_game(self):
         self.display.display_jumper(self.player.get_lives())
         """Display the parachute status and validate if the player the player fullfil the conditions to still playing the game"""
@@ -30,7 +30,6 @@ class Manager():
             self.do_inputs()
             self.do_calculations()
             self.do_outputs()
-
     def do_inputs(self):
         """Get the input letter from the user" and check if they can keep playing"""
         self.letter = self.display.user_input()
@@ -39,16 +38,16 @@ class Manager():
     def do_calculations(self):
         ''''Check if user's guess was correct and change game conditionals if needed'''
         self.check_guess()
-
+        
         if not self.check_puzzle():
             self.isPlaying = False
             self.winCondition = True
-
+        
+        
     def do_outputs(self):
         """call the methods from display class"""
         self.display.display_jumper(self.player.get_lives())
-        self.display.display_puzzle(
-            self.guessed_letter, self.word.get_puzzle())
+        self.display.display_puzzle(self.guessed_letter, self.word.get_puzzle())
         self.display.display_letters_used(self.player.get_letters_used())
         if not self.isPlaying:
 
@@ -75,7 +74,7 @@ class Manager():
     def check_puzzle(self):
         """checks to see letter is in puzzle"""
         checker = False
-        if len(self.guessed_letter) > 0:
+        if len(self.guessed_letter)>0:
             for i in self.word.get_puzzle():
                 if not i in self.guessed_letter:
                     checker = True
@@ -87,3 +86,7 @@ class Manager():
         """checks whether the player is out of lives and changes game conditional"""
         if len(self.player.get_lives()) == 0:
             self.isPlaying = False
+
+
+
+    
