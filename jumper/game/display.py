@@ -39,4 +39,4 @@ class Display:
         print(f"Letters used: {letters}")
     
     def display_secret_word(self,word):
-        print(f"The word was: {word}")
+        print(f"The secret word is: {word}")
