@@ -45,6 +45,9 @@ root                    (project root folder)
 
 ## UML Diagram
 
+<img src="game-diagram.png" widt="500px">
+
+
 ---
 
 ## Define of classes:
