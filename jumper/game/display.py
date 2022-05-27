@@ -2,11 +2,10 @@
 class Display:
     
     def display_jumper(self, jumper):
-        print("_ _ _ _ _\n")
+        #print("_ _ _ _ _\n")
         for i in jumper:
             print(i)
         print("^^^^^^^\n")
-
         """Print the status of the parachute when the player guess or not a letter of the secret word"""
 
     

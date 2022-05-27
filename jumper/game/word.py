@@ -2,7 +2,6 @@ import random
 
 
 class Word:
-
     """Select a ramdom word in the lists as the secret word"""
     def __init__(self):
         self._list = ["aspiring", "moon", "attempt", "physical", "staking", "pointless", "adventurous", "wail", "chivalrous", "risk", "gruesome", "button", "tacky", "alike", "deafening", "right", "brown", "island", "lamp", "delightful", "oven", "oval", "tree", "ill-informed", "useless", "stone", "describe", "post", "solid", "questionable", "cut", "possible", "nervous", "roof", "tub", "bikes", "listen", "advise", "wiry", "statement", "therapeutic", "twig", "bustling", "alcoholic", "key", "middle", "pedal", "educate", "bushes", "thunder", "admire", "skin", "motion", "abaft", "abundant", "jam", "month", "concerned", "advice", "bleach", "form", "minister", "wind", "complex", "playground", "industry", "chilly", "record", "mom", "last", "literate", "jar", "vase", "daughter", "torpid", "produce", "mess up", "ultra", "thrill", "unaccountable", "mend", "property", "tearful", "insurance", "writing", "interesting", "amount", "ashamed", "telephone", "language", "dependent", "neat", "harbor", "messy", "repulsive", "pocket", "clumsy", "phobic", "nine", "worm", "pizzas", "real", "mundane", "tiny", "release", "stew", "circle", "kiss", "loving", "crack", "exuberant", "wait", "misty", "reward", "reaction", "detailed", "print", "mug", "railway", "oranges", "trap", "finger", "coil", "befitting", "sedate", "smell", "snobbish", "front", "precious", "pies", "glass", "addition", "shocking", "drop", "station", "view", "white", "haircut", "bird", "pinch", "unfasten", "succeed", "stingy", "valuable", "dispensable", "queue", "angle", "historical", "design", "crabby", "word", "man", "education", "wood", "war", "scarf", "wealth", "didactic", "able", "icicle", "jelly", "plantation", "stuff", "sign", "march", "stop", "picture", "regular", "day", "tax", "acrid", "bait", "squirrel", "disapprove", "count", "peaceful", "winter", "macho", "lackadaisical", "tease", "spooky", "stem", "oafish", "brush", "tank", "worry", "enormous", "vigorous", "itchy", "jagged", "dance", "shade", "committee", "whip", "rampant", "existence", "smiling", "frame", "piquant", "doctor", "profit", "letter", "church", "ants", "greasy", "tall", "cub", "voyage", "comfortable", "degree", "little", "private", "zip", "disgusted", "enchanting", "cap", "deceive", "apologise", "rabbit", "mix", "lowly", "acceptable", "legs", "curve", "flavor", "cloth", "craven", "windy", "tawdry", "handle", "multiply", "bare", "sponge", "upset", "blind", "analyze", "imported", "sand", "joke", "earth", "flag", "magnificent", "beneficial", "tender", "rest", "person", "groovy", "theory", "floor",
@@ -11,6 +10,5 @@ class Word:
 
 
     def get_puzzle(self):
-
         """Return the secret word"""
         return self._puzzle
