@@ -1,11 +1,15 @@
+"""Display class has the methods to show the different messages of the game and show the update status of parachute"""
 class Display:
-
+    
     def display_jumper(self, jumper):
         print("_ _ _ _ _\n")
         for i in jumper:
             print(i)
         print("^^^^^^^\n")
 
+        """Print the status of the parachute when the player guess or not a letter of the secret word"""
+
+    
     def display_puzzle(self, letters, word):
         for letter in word:
             if letter in letters:
@@ -13,7 +17,9 @@ class Display:
             else:
                 print(" _ ", end="")
         print()
+        """print the letters guessed of the secret word"""
 
+    
     def user_input(self):
         correct = True
         while correct:
@@ -25,7 +31,11 @@ class Display:
             else:
                 correct = False
                 return letter
-
+        """Method to validate the input letter"""
+    
+    
+    """Messages show to the player along the game"""
+    
     def display_win_message(self):
         print("Congratulations, you guessed the word and won the game!")
 

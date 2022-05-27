@@ -15,6 +15,7 @@ class Manager():
 
         self.guessed_letter = []
 
+        """initialize the varibles of the game"""
 
     def start_game(self):
         self.display.display_jumper(self.player.get_lives())
@@ -22,19 +23,24 @@ class Manager():
             self.do_inputs()
             self.do_calculations()
             self.do_outputs()
-
+        """Display the parachute status and validate if the player the player fullfil the conditions to still playing the game"""
     def do_inputs(self):
         self.letter = self.display.user_input()
+        """Get the input letter """
 
     def do_calculations(self):
         self.check_guess()
         self.check_lives()
+        """call the methods to veirfy the input letters and the lives of the player """
+        
         if not self.check_puzzle():
             self.isPlaying = False
             self.winCondition = True
-
+        
+        
     def do_outputs(self):
 
+        """call the methods from display class"""
         self.display.display_jumper(self.player.get_lives())
         self.display.display_puzzle(self.guessed_letter, self.word.get_puzzle())
         self.display.display_letters_used(self.player.get_letters_used())
@@ -47,13 +53,17 @@ class Manager():
                 self.display.display_secret_word(self.word.get_puzzle())
 
     def check_guess(self):
+
+        
         if self.letter in self.player.letters_used():
             self.display.display_used_letter()
+            """validate the if the letter was already chosen and display the message"""
         elif self.letter not in self.word.get_puzzle():
             self.player.add_letters_used(self.letter)
             aux_lives = self.player.get_lives()
             aux_lives.pop(0)
             self.player.set_lives(aux_lives)
+            """if the letter is was not chosen, add to the array of the input letters and remove one live to the player"""
         else:
             self.player.add_letters_used(self.letter)
             self.guessed_letter.append(self.letter)
@@ -71,7 +81,7 @@ class Manager():
         return checker
 
     def check_lives(self):
-
+        """Method to calculte the lives of the player"""
         if len(self.player.get_lives()) == 0:
             self.isPlaying = False
 
