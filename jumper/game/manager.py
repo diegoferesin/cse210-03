@@ -28,6 +28,7 @@ class Manager():
 
     def do_calculations(self):
         self.check_guess()
+        self.check_lives()
         if not self.check_puzzle():
             self.isPlaying = False
             self.winCondition = True
