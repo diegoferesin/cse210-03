@@ -31,3 +31,6 @@ class Display:
 
     def display_loss_message(self):
         print("Your jumper run out of lives. Better luck next time.")
+
+    def display_used_letter(self):
+        print("You already used this letter. Please try with a different one 😁")

@@ -46,7 +46,7 @@ class Manager():
 
     def check_guess(self):
         if self.letter in self.player.letters_used():
-            print("You already used this letter. Please try with a different one 😁")
+            self.display.display_used_letter()
         elif self.letter not in self.word.get_puzzle():
             self.player.add_letters_used(self.letter)
             aux_lives = self.player.get_lives()
