@@ -55,25 +55,26 @@ root                    (project root folder)
 ---
 
 Player
-⁃ lives:[chart]
-⁃ letter that used:[strings]
-⁃ + writeALetter():string
-⁃ + getLives():[chart]
+- lives:[chart]
+- letter that used:[strings]
+- +writeALetter():string
+- +getLives():[chart]
+ 
 
 Game Manager
-⁃ + startGame():void
-⁃ + getInput():string
-⁃ + displayOutput():void
-⁃ + doMath():
-⁃ + endGame():void
+- +startGame():void
+- +getInput():string
+- +displayOutput():void
+- +doMatch():void
+- +endGame():void
 
 Display
-⁃ + output():void
-⁃ + input():string
+- +output():void
+- +input():string
 
 Word generator
-⁃ - list of word
-⁃ + generateRandomlyWord():string
+- -list of words
+- +generateRandomlyWord():string
 
 ## Authors
 
